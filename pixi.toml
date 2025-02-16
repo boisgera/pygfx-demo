@@ -2,13 +2,15 @@
 authors = ["Sébastien Boisgérault <Sebastien.Boisgerault@gmail.com>"]
 channels = ["conda-forge"]
 name = "pygfx_sandbox"
-platforms = ["linux-64"]
+platforms = ["linux-64", "win-64", "osx-64", "osx-arm64"]
 version = "0.1.0"
 
 [tasks]
+start = "python app.py"
 
 [dependencies]
 python = ">=3.13.2,<3.14"
-pygfx = ">=0.7.0,<0.8"
+pygfx = ">=0.1.17,<0.8"
 pyglfw = ">=2.8.0,<3"
 glfw = ">=3.4,<4"
+

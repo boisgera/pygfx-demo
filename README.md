@@ -1,7 +1,7 @@
 
 TODO:
 
-  - [ ] Check multi-platform
+  - [X] Check multi-platform
 
   - [ ] Key handlers
 
