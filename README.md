@@ -1,4 +1,6 @@
 
 TODO:
-  - Key handlers
-  - Integrate in marimo
+
+  -[ ] Check multi-platform
+  -[ ] Key handlers
+  -[ ] Integrate in marimo
