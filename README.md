@@ -5,4 +5,4 @@ TODO:
 
   - [ ] Key handlers
 
-  - [ ] Integrate in marimo
+  - [ ] Study <https://github.com/pygfx/pygfx/blob/main/docs/guide.rst>
