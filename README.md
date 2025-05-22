@@ -1,8 +1,15 @@
 
-TODO:
+# Pygfx demo
 
-  - [X] Check multi-platform
+![Flying cube screenshot](images/flying-cube.png)
 
-  - [ ] Key handlers
+## Getting Started
 
-  - [ ] Study <https://github.com/pygfx/pygfx/blob/main/docs/guide.rst>
+If you need to, [install a recent version of pixi](https://pixi.sh/latest/#installation).
+
+Then, in the root folder of this project, execute the command: 
+
+```bash
+pixi run demo
+```
+
