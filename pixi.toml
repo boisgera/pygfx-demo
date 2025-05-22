@@ -7,10 +7,15 @@ version = "0.1.0"
 
 [tasks]
 start = "python app.py"
+demo = "python flying_cube.py"
 
 [dependencies]
 python = ">=3.13.2,<3.14"
 pygfx = ">=0.1.17,<0.8"
 pyglfw = ">=2.8.0,<3"
 glfw = ">=3.4,<4"
+trimesh = ">=4.6.10,<5"
+scipy = ">=1.15.2,<2"
+numpy = ">=2.2.6,<3"
+rendercanvas = ">=2.1.2,<3"
 
