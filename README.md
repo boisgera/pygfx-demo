@@ -13,3 +13,18 @@ Then, in the root folder of this project, execute the command:
 pixi run demo
 ```
 
+## Demos
+
+Type 
+
+```bash
+pixi run
+```
+
+to get a list of all available demos, then execute
+
+```bash
+pixi run DEMO_NAME
+```
+
+to run it.
