@@ -21,10 +21,10 @@ Type
 pixi run
 ```
 
-to get a list of all available demos, then execute
+to get the list of available demos, then execute
 
 ```bash
 pixi run DEMO_NAME
 ```
 
-to run it.
+to run your selected demo.
