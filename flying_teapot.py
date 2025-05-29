@@ -78,7 +78,7 @@ scene = gfx.Scene().add(
     teapot,
 )
 
-canvas = rendercanvas.auto.RenderCanvas(title="Flying Cube")
+canvas = rendercanvas.auto.RenderCanvas(title="Flying Teapot")
 renderer = gfx.renderers.WgpuRenderer(canvas)
 
 gfx.show(
