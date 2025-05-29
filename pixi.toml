@@ -10,7 +10,7 @@ cube = "python flying_cube.py"
 teapot = "python flying_teapot.py"
 demo = [{ task = "cube" }]
 robot-arm = "python robot_arm.py"
-generate-meshes = "python generate-meshes"
+generate-meshes = "python generate-meshes.py"
 
 [dependencies]
 python = ">=3.13.2,<3.14"
