@@ -9,6 +9,8 @@ version = "0.1.0"
 cube = "python flying_cube.py"
 teapot = "python flying_teapot.py"
 demo = [{ task = "cube" }]
+robot-arm = "python robot_arm.py"
+generate-meshes = "python generate-meshes"
 
 [dependencies]
 python = ">=3.13.2,<3.14"
@@ -17,9 +19,10 @@ glfw = ">=3.4,<4"
 scipy = ">=1.15.2,<2"
 numpy = ">=2.2.6,<3"
 rendercanvas = ">=2.1.2,<3"
+trimesh = ">=4.6.10,<5"
 
 [pypi-dependencies]
+sdf = { git = "https://github.com/fogleman/sdf.git" }
 pyside6 = ">=6.9.0, <7"
-trimesh = ">=4.6.10, <5"
 pygfx = ">=0.10.0, <0.11"
 
