@@ -12,6 +12,7 @@ demo = [{ task = "cube" }]
 robot-arm = "python robot_arm.py"
 generate-meshes = "python generate-meshes.py"
 pendulum = "python pendulum.py"
+chariot = "python chariot.py"
 
 [dependencies]
 python = ">=3.13.2,<3.14"

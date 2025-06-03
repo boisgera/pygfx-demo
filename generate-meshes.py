@@ -1,3 +1,4 @@
+import numpy as np
 import sdf  # from https://github.com/fogleman/sdf
 
 # Axe
@@ -19,7 +20,7 @@ axe.save("models/axe.stl")
 width = 0.5
 radius = 1.0
 square_radius = 0.5
-square_width = 1.2
+square_width = 0.75
 assert square_width > width
 hole_radius = 0.2
 
@@ -29,10 +30,39 @@ cylinder = sdf.capped_cylinder(
     radius,
 )
 square = sdf.box(
-    a=[-square_radius, +square_radius, -square_width / 2],
+    a=[-square_radius, -square_radius, -square_width / 2],
     b=[+square_radius, +square_radius, +square_width / 2],
 )
-hole = sdf.cylinder(radius)
+hole = sdf.cylinder(hole_radius)
 
-wheel = (cylinder | square) - hole 
+wheel = (cylinder | square) - hole
 wheel.save("models/wheel.stl")
+
+# Frame
+radius = 5.0
+ratio = 0.8
+width = 0.5
+axe_radius = 0.20001
+frame = sdf.capped_cylinder(
+    [0.0, 0.0, -width / 2],
+    [0.0, 0.0, +width / 2],
+    radius,
+)
+frame -= sdf.box(
+    a=[-2 * radius, -2 * radius, -width],
+    b=[-ratio * radius, +2 * radius, +2 * width],
+)
+frame -= sdf.box(
+    a=[+ratio * radius, -2 * radius, -width],
+    b=[2 * ratio * radius, +2 * radius, +2 * width],
+)
+frame |= (
+    sdf.capped_cylinder([0.0, 0.0, 0.0], [0.0, 0.0, 2*radius], axe_radius)
+    .rotate(np.pi / 2, [0.0, -1.0, 0.0])
+    .translate([radius, 0.0, 0.0])
+)
+
+frame = frame.rotate(np.pi / 2, [0.0, 0.0, 1.0])
+
+
+frame.save("models/frame.stl")
