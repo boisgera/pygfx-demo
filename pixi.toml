@@ -22,6 +22,7 @@ scipy = ">=1.15.2,<2"
 numpy = ">=2.2.6,<3"
 rendercanvas = ">=2.1.2,<3"
 trimesh = ">=4.6.10,<5"
+libgfortran = ">=14.2.0,<16"
 
 [pypi-dependencies]
 sdf = { git = "https://github.com/fogleman/sdf.git" }
