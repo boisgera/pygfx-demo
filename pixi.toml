@@ -13,6 +13,8 @@ robot-arm = "python robot_arm.py"
 generate-meshes = "python generate-meshes.py"
 pendulum = "python pendulum.py"
 chariot = "python chariot.py"
+ball = "python ball.py"
+bicycle = "python bicycle.py"
 
 [dependencies]
 python = ">=3.13.2,<3.14"
@@ -23,6 +25,7 @@ numpy = ">=2.2.6,<3"
 rendercanvas = ">=2.1.2,<3"
 trimesh = ">=4.6.10,<5"
 libgfortran = ">=14.2.0,<16"
+pytorch = ">=2.7.1,<3"
 
 [pypi-dependencies]
 sdf = { git = "https://github.com/fogleman/sdf.git" }
